@@ -175,7 +175,7 @@ let checkWin = function (t) {
 let result = function (m) {
     if (i == 1) {
         line.style.width = "21vw";
-        line.style.top = "16%";
+        line.style.top = "12.5%";
         line.style.left = "2%";
         line.style.transform = "rotate(180deg)";
         gameInfo.innerHTML = `${m} WINs`;
@@ -184,8 +184,8 @@ let result = function (m) {
     }
     if (i == 2) {
         line.style.width = "21vw";
-        line.style.top = "50%";
-        line.style.left = "2%";
+        line.style.top = "46%";
+        line.style.left = "1%";
         line.style.transform = "rotate(180deg)";
         gameInfo.innerText = `${m} WINs`;
         moveImg();
@@ -193,7 +193,7 @@ let result = function (m) {
     }
     if (i == 3) {
         line.style.width = "21vw";
-        line.style.top = "83.5%";
+        line.style.top = "80.5%";
         line.style.left = "2%";
         line.style.transform = "rotate(180deg)";
         gameInfo.innerText = `${m} WINs`;
@@ -212,7 +212,7 @@ let result = function (m) {
     if (i == 5) {
         line.style.width = "21vw";
         line.style.top = "49%";
-        line.style.left = "2.4%";
+        line.style.left = "1.75%";
         line.style.transform = "rotate(90deg)";
         gameInfo.innerText = `${m} WINs`;
         moveImg();
