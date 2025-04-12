@@ -82,8 +82,8 @@ backBtn.addEventListener("click", function () {
 let winImg = document.querySelector(".winImg");
 let moveImg = function () {
     winImg.style.opacity = "1";
-    winImg.style.left = "70%";
-    winImg.style.top = "30%";
+    winImg.style.left = "40vh";
+    winImg.style.top = "14vh";
 }
 
 // RESET BUTTON
