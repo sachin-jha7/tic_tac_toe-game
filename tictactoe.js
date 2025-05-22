@@ -16,6 +16,15 @@ playBtn1.addEventListener("click", function () {
     isMove = true;
     turns = "X";
 });
+let notice = document.querySelector(".smallScreen");
+if(window.innerWidth > window.innerHeight) {
+    playBtn1.style.opacity = "1";
+    notice.style.opacity = "0";
+}
+if (window.innerWidth < 768) {
+    notice.style.opacity = "1";
+    //console.log("please Rotate your phone");
+}
 // BUTTON TOGGLE & CLICK
 for (let btn of allBtn) {
     btn.addEventListener("click", function () {
