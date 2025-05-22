@@ -23,6 +23,7 @@ if(window.innerWidth > window.innerHeight) {
 }
 if (window.innerWidth < 768) {
     notice.style.opacity = "1";
+    playBtn1.style.opacity = "0";
     //console.log("please Rotate your phone");
 }
 // BUTTON TOGGLE & CLICK
