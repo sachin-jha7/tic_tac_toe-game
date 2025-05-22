@@ -46,6 +46,12 @@ nav {
     font-size: 1.2vw;
     font-weight: 400;
 }
+.smallScreen {
+    position: absolute;
+    top: 23%;
+    left: 37%;
+    opacity: 0;
+}
 .reset {
     height: 2.5vw;
     width: 4.5vw;
