@@ -17,10 +17,12 @@ playBtn1.addEventListener("click", function () {
     turns = "X";
 });
 let notice = document.querySelector(".smallScreen");
-if(window.innerWidth > window.innerHeight) {
+window.addEventListener("resize", function() {
+    if(window.innerWidth > window.innerHeight) {
     playBtn1.style.opacity = "1";
     notice.style.opacity = "0";
 }
+});
 if (window.innerWidth < 768) {
     notice.style.opacity = "1";
     playBtn1.style.opacity = "0";
