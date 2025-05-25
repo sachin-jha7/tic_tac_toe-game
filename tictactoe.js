@@ -95,7 +95,7 @@ let winImg = document.querySelector(".winImg");
 let moveImg = function () {
     winImg.style.opacity = "1";
     winImg.style.left = "70vw";
-    winImg.style.top = "15vw";
+    winImg.style.top = "17vw";
 }
 
 // RESET BUTTON
