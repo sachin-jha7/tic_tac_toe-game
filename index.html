@@ -4,64 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic-Tac-Toe</title>
-    <link rel="stylesheet" href="tictactoe.css">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    <div class="nav">
+        <p class="header"><span class="one">Tic</span>-<span class="two">Tac</span>-<span class="three">Toe</span></p>
+    </div>
     <div class="main">
-        <nav>
-            <div class="nav">
-                <p>MyTicTacToe.com</p>
+        <div class="game-container">
+            <div class="score-bar">
+                <button class="btn X-btn">X - 0</button>
+                <p class="turn">Turn for: X</p>
+                <button class="btn O-btn">O - 0</button>
             </div>
-        </nav>
-        <div class="navBtn">
-            <button class="playBtn1 change">start</button>
-        </div>
-        <br>
-        <div class="smallScreen">
-            <p>Please Rotate Your Screen!</p>
-        </div>
-        <div class="container">
-            <div class="line"></div>
-            <div class="btn bl bt btn1" type="button" id="1">
-                <p></p>
+            <div class="result">
+                <p class="result-text">X &nbsp; wins</p>
+                <button class="restart-btn">Restart</button>
             </div>
-            <div class="btn bt btn2" type="button" id="2">
-                <p></p>
+            <div class="container">
+                <div class="line-one">
+                    <div class="box b-t0 b-l0" id="box1" type="button"></div>
+                    <div class="box b-l0" id="box2" type="button"></div>
+                    <div class="box b-l0 b-b0" id="box3" type="button"></div>
+                </div>
+                <div class="line-two">
+                    <div class="box b-t0" id="box4" type="button"></div>
+                    <div class="box" id="box5" type="button"></div>
+                    <div class="box b-b0" id="box6" type="button"></div>
+                </div>
+                <div class="line-three">
+                    <div class="box b-t0 b-r0" id="box7" type="button"></div>
+                    <div class="box b-r0" id="box8" type="button"></div>
+                    <div class="box b-r0 b-b0" id="box9" type="button"></div>
+                </div>
+                <div class="line"></div>
             </div>
-            <div class="btn bt br btn3" type="button" id="3">
-                <p></p>
-            </div>
-            <div class="btn bl btn4" type="button" id="4">
-                <p></p>
-            </div>
-            <div class="btn btn5" type="button" id="5">
-                <p></p>
-            </div>
-            <div class="btn br btn6" type="button" id="6">
-                <p></p>
-            </div>
-            <div class="btn bl bb btn7" type="button" id="7">
-                <p></p>
-            </div>
-            <div class="btn bb btn8" type="button" id="8">
-                <p></p>
-            </div>
-            <div class="btn bb br btn9" type="button" id="9">
-                <p></p>
-            </div>
-            <br>
-            <button class="quit">quit!</button>
-        </div>
-        <div class="info">
-            <div class="turn"><span class="option">Turn for :- X</span></div>
-            <button class="reset">reset</button>
-        </div>
-        <div class="winImg">
-            <img src="i-win.gif" alt="win win">
         </div>
     </div>
-    <script src="tictactoe.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>
